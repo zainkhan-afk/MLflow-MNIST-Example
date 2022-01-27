@@ -1,0 +1,10 @@
+name: mnist_trainer
+
+docker_env:
+  image:  mnist_trainer
+
+entry_points:
+  main:
+    parameters:
+      epochs: int
+    command: "python train.py {epochs}"
