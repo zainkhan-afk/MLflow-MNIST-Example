@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3:4.10.3
 
-COPY training.py /training.py
+COPY train.py /train.py
 
 RUN pip install mlflow>=1.0 \
     && pip install numpy==1.22.1 \
